@@ -12,7 +12,7 @@ python setup.py install #windows
 import pyrss
 from requests import get
 
-url = "http://www.tabnak.ir/fa/rss/all/mostvisited"
+url = "http://www.isna.ir/rss"
 url_content = get(url).text
 
 rss_soup = pyrss.parserss(url_content)
